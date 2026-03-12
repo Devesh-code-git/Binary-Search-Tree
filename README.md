@@ -1,6 +1,6 @@
 # Binary-Search-Tree
 
-This is my own implementation of a binary search tree in C. The methods I included were:[\n]
+This is my own implementation of a binary search tree in C. The methods I included were:[/n]
 
 create() - Creates a new tree with the root value
 add() - adds value to tree
