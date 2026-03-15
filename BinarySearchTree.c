@@ -80,6 +80,7 @@ Tree* delete(int v, Tree* t) {
 			
 			if (current->left == NULL) { // If the right-subtree is the successor
 				t->value = current->value;
+				t->count = current->count;
 				
 				if (current->right != NULL) { // If the right-subtree has a right child
 					t->right = current->right;
@@ -101,6 +102,7 @@ Tree* delete(int v, Tree* t) {
 			}
 			
 			t->value = current->value;
+			t->count = current->count;
 			
 			if (current->right != NULL) { // If the leftmost node of the right-subtree has a right child
 				prev->left = current->right;
@@ -183,8 +185,4 @@ void postorder_traversal(Tree* t) {
 	postorder_traversal(t->right);
 	
 	printf("%d ", t->value);
-}
-
-int main() {
-    return 0;
 }
